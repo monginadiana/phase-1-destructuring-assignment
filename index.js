@@ -1,6 +1,6 @@
 const farmAnimals = 'cow horse sheep pig chicken';
 
-const colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+// const colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
 
 const muppet = {
   muppetName: 'Miss Piggy',
@@ -9,6 +9,8 @@ const muppet = {
   job: 'Cast member of The Muppet Show',
   partner: 'Kermit'
 };
+
+const {muppetName, color,song, job, partner } = muppet;
 
 const nestedMuppet = {
   nestedName: 'Kermit',
@@ -24,6 +26,66 @@ const nestedMuppet = {
   nestedJob: 'Host of The Muppet Show',
   nestedPartner: 'Miss Piggy'
 };
+
+
+
+// const dogsName = 'Sir Woody BarksALot';
+// const [title, firstName, lastName] = dogsName.split(' ');
+// console.log(title, firstName, lastName); // LOG: Sir Woody BarksALot
+
+const animalSound = {
+  moo : 'cow',
+  neigh : 'horse',
+  baa : 'sheep',
+  oink : 'pig',
+  cluck : 'chicken'
+
+}
+
+const { moo, neigh, baa, oink, cluck} = animalSound;
+
+const traditionalColors = {
+ blackAndWhite: 'cow',
+  black : 'sheep',
+  pink : 'pig',
+  
+
+}
+
+const { blackAndWhite, black, pink} = traditionalColors;
+
+const traditionalAnimals= {
+  bessie: 'cow',
+  dolly : 'sheep',
+  babe: 'pig',
+  little : 'chicken',
+  
+}
+const { bessie, dolly, babe, little} =traditionalAnimals;
+
+const colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+const [ red, orange, yellow, green, blue, indigo, violet] = colors;
+console.log(colors); 
+
+const color1 = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+const [ r, o, y, g, b, i, v] = colors;
+const indg = indigo;
+console.log(); 
+
+const newmuppet = {...nestedMuppet};
+newmuppet.partner = 'Miss Piggy'
+newmuppet.job = 'Host of The Muppet Show'
+
+const nestedJob =newmuppet.job;
+const nestedPartner = newmuppet.partner;
+const newObj = {...newmuppet,...nestedPartner};
+
+const song2 = newObj.album.theMuppetMovie.song2;
+const song4 = newObj.album.theMuppetMovie.song4;
+
+
+
+
 
 // Strings
 
